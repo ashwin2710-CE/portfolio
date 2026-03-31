@@ -1,0 +1,370 @@
+/* ---------------- Global Styles ---------------- */
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+
+  /* ---------------- Footer Fix ---------------- */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1; /* makes content take remaining space above footer */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 10px;
+}
+
+.logo {
+  color: white;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ---------------- Forms ---------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background: black;
+}
+
+/* ---------------- Tables ---------------- */
+.edu-table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+}
+
+.edu-table th, .edu-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.edu-table th {
+  background: #333;
+  color: white;
+}
+
+.edu-table tr:hover {
+  background: #f1f1f1;
+}
+
+/* ---------------- Experience Box ---------------- */
+.exp-box {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: 0.5s;
+}
+
+.exp-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------------- Hobby Box ---------------- */
+.hobby-box {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 25px 30px;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.9);
+  transition: 0.3s; 
+  text-align: left;
+}
+
+.hobby-box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #536add; 
+}
+
+.hobby-box ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.hobby-box ul li {
+  margin-bottom: 8px;
+}
+
+.hobby-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------------- Audio Player ---------------- */
+.audio-player {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 20px;
+}
+
+/* ---------------- Quote Box ---------------- */
+.quote-box {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: 0.3s; 
+}
+
+.quote-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.q1 h2 { font-family: 'Playfair Display', serif; color: #e63946; }
+.q2 h2 { font-family: 'Oswald', sans-serif; color: #1d3557; }
+.q3 h2 { font-family: 'Poppins', sans-serif; color: #2a9d8f; }
+.q4 h2 { font-family: 'Pacifico', cursive; color: #ff8800; }
+.q5 h2 { font-family: 'Lobster', cursive; color: #6a4c93; }
+
+.quote-box p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+}
+
+/* ---------------- Contact Box ---------------- */
+.contact-box, .card {
+  background: #ffffff;
+  padding: 30px;
+  width: 320px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover, .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.contact-box label {
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;   
+  font-weight: 600;
+  color: #222;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+  border-color: #536add;
+  box-shadow: 0 0 6px rgba(83,106,221,0.4);
+}
+
+.contact-box button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;         
+  border: none;
+  border-radius: 8px;
+  background: #536add;  
+  color: white;
+  font-size: 15px;       
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-box button:hover {
+  background: #0e2dda;  
+}
+
+/* ---------------- Feedback Box ---------------- */
+.feedback-box {
+  background: #ffffff;
+  padding: 30px;
+  width: 320px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.9);
+}
+
+.feedback-box label {
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.feedback-box input,
+.feedback-box textarea,
+.feedback-box select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.feedback-box input:focus,
+.feedback-box textarea:focus,
+.feedback-box select:focus {
+  border-color: #536add;
+  box-shadow: 0 0 6px rgba(83,106,221,0.4);
+}
+
+.feedback-box button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #536add;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feedback-box button:hover {
+  background: #0e2dda;
+}
+
+/* ---------------- Home Page Hero Styles ---------------- */
+.home-hero {
+  max-width: 900px;
+  margin: 80px auto 50px auto;
+  text-align: center;
+}
+
+.home-hero .profile {
+  width: 180px;                
+  height: 180px;              
+  border-radius: 50%;         
+  border: 4px solid #1335de;  
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5); 
+  object-fit: cover;        
+  transition:  0.3s;
+}
+
+.home-hero .profile:hover {
+  transform: scale(1.18);
+  box-shadow: 0 12px 30px rgba(83,106,221,0.7);
+}
+.home-hero h1 {
+  font-size: 36px;
+  margin: 20px 0 10px;
+  color: #1e1e2f;
+  font-weight: bold;
+}
+
+.home-hero h1 span {
+  color: #3881d5;
+}
+
+.home-hero h3 {
+  font-size: 20px;
+  color: #093499;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.home-hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.home-hero .links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.home-hero .btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: #536add;
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.home-hero .btn:hover {
+  background: #ff6b6b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+}
