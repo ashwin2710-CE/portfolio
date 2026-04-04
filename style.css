@@ -1,17 +1,16 @@
-/* ---------------- Global Styles ---------------- */
+
 body {
   margin: 0;
   font-family: Arial;
   background: #f4f4f4;
 
-  /* ---------------- Footer Fix ---------------- */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .page-content {
-  flex: 1; /* makes content take remaining space above footer */
+  flex: 1; 
 }
 
 .navbar {
@@ -55,7 +54,6 @@ footer {
   padding: 10px;
 }
 
-/* ---------------- Forms ---------------- */
 form {
   display: flex;
   flex-direction: column;
@@ -79,7 +77,6 @@ button:hover {
   background: black;
 }
 
-/* ---------------- Tables ---------------- */
 .edu-table {
   width: 80%;
   margin: auto;
@@ -102,7 +99,6 @@ button:hover {
   background: #f1f1f1;
 }
 
-/* ---------------- Experience Box ---------------- */
 .exp-box {
   background: white;
   margin: 20px auto;
@@ -117,7 +113,7 @@ button:hover {
   transform: translateY(-5px);
 }
 
-/* ---------------- Hobby Box ---------------- */
+
 .hobby-box {
   background: #ffffff;
   margin: 20px auto;
@@ -150,7 +146,7 @@ button:hover {
   transform: translateY(-5px);
 }
 
-/* ---------------- Audio Player ---------------- */
+
 .audio-player {
   margin-top: 15px;
   width: 100%;
@@ -158,7 +154,6 @@ button:hover {
   border-radius: 20px;
 }
 
-/* ---------------- Quote Box ---------------- */
 .quote-box {
   background: white;
   margin: 20px auto;
@@ -186,7 +181,7 @@ button:hover {
   color: #555;
 }
 
-/* ---------------- Contact Box ---------------- */
+
 .contact-box, .card {
   background: #ffffff;
   padding: 30px;
@@ -246,7 +241,7 @@ button:hover {
   background: #0e2dda;  
 }
 
-/* ---------------- Feedback Box ---------------- */
+
 .feedback-box {
   background: #ffffff;
   padding: 30px;
@@ -301,7 +296,6 @@ button:hover {
   background: #0e2dda;
 }
 
-/* ---------------- Home Page Hero Styles ---------------- */
 .home-hero {
   max-width: 900px;
   margin: 80px auto 50px auto;
