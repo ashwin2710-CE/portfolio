@@ -3,15 +3,12 @@ body {
   margin: 0;
   font-family: Arial;
   background: #f4f4f4;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.page-content {
-  flex: 1; 
-}
+.page-content { flex: 1; }
 
 .navbar {
   display: flex;
@@ -20,27 +17,21 @@ body {
   padding: 10px;
 }
 
-.logo {
-  color: white;
-}
+.logo { color: white; }
 
 .menu {
   list-style: none;
   display: flex;
 }
 
-.menu li {
-  margin: 0 10px;
-}
+.menu li { margin: 0 10px; }
 
 .menu a {
   color: white;
   text-decoration: none;
 }
 
-.menu a:hover {
-  color: yellow;
-}
+.menu a:hover { color: yellow; }
 
 .container {
   text-align: center;
@@ -54,29 +45,6 @@ footer {
   padding: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: auto;
-}
-
-input, textarea {
-  margin: 10px 0;
-  padding: 10px;
-}
-
-button {
-  padding: 10px;
-  background: #333;
-  color: white;
-  border: none;
-}
-
-button:hover {
-  background: black;
-}
-
 .edu-table {
   width: 80%;
   margin: auto;
@@ -84,7 +52,8 @@ button:hover {
   background: white;
 }
 
-.edu-table th, .edu-table td {
+.edu-table th, 
+.edu-table td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: center;
@@ -95,78 +64,68 @@ button:hover {
   color: white;
 }
 
-.edu-table tr:hover {
-  background: #f1f1f1;
+.edu-table tr:hover { background: #f1f1f1; }
+
+.exp-box,
+.hobby-box,
+.quote-box {
+  background: #fff;
+  margin: 20px auto;
+  width: 60%;
 }
 
 .exp-box {
-  background: white;
-  margin: 20px auto;
   padding: 20px;
-  width: 60%;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
   transition: 0.5s;
 }
 
-.exp-box:hover {
+.hobby-box {
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.9);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.quote-box {
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.exp-box:hover,
+.hobby-box:hover,
+.quote-box:hover {
   transform: translateY(-5px);
 }
 
-
-.hobby-box {
-  background: #ffffff;
-  margin: 20px auto;
-  padding: 25px 30px;
-  width: 60%;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.9);
-  transition: 0.3s; 
-  text-align: left;
+.quote-box:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .hobby-box h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #536add; 
+  color: #536add;
 }
 
 .hobby-box ul {
-  list-style-type: disc;
+  list-style: disc;
   padding-left: 25px;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-.hobby-box ul li {
-  margin-bottom: 8px;
-}
-
-.hobby-box:hover {
-  transform: translateY(-5px);
-}
-
+.hobby-box ul li { margin-bottom: 8px; }
 
 .audio-player {
   margin-top: 15px;
   width: 100%;
   outline: none;
   border-radius: 20px;
-}
-
-.quote-box {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  width: 60%;
-  border-radius: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: 0.3s; 
-}
-
-.quote-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .q1 h2 { font-family: 'Playfair Display', serif; color: #e63946; }
@@ -181,76 +140,34 @@ button:hover {
   color: #555;
 }
 
-
-.contact-box, .card {
-  background: #ffffff;
+.contact-box, 
+.card,
+.feedback-box {
+  background: #fff;
   padding: 30px;
   width: 320px;
   margin: 40px auto;
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
   text-align: left;
+}
+
+.contact-box, .card {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-box:hover, .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-}
-
-.contact-box label {
-  display: block;
-  margin-top: 12px;
-  font-size: 16px;   
-  font-weight: 600;
-  color: #222;
-}
-
-.contact-box input,
-.contact-box textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  outline: none;
-  transition: 0.3s;
-  font-size: 14px;
-}
-
-.contact-box input:focus,
-.contact-box textarea:focus {
-  border-color: #536add;
-  box-shadow: 0 0 6px rgba(83,106,221,0.4);
-}
-
-.contact-box button {
-  width: 100%;
-  margin-top: 15px;
-  padding: 8px;         
-  border: none;
-  border-radius: 8px;
-  background: #536add;  
-  color: white;
-  font-size: 15px;       
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact-box button:hover {
-  background: #0e2dda;  
-}
-
-
 .feedback-box {
-  background: #ffffff;
-  padding: 30px;
-  width: 320px;
-  margin: 40px auto;
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.9);
 }
 
+.contact-box:hover, 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.contact-box label,
 .feedback-box label {
   display: block;
   margin-top: 12px;
@@ -259,6 +176,8 @@ button:hover {
   color: #222;
 }
 
+.contact-box input,
+.contact-box textarea,
 .feedback-box input,
 .feedback-box textarea,
 .feedback-box select {
@@ -268,10 +187,12 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 10px;
   outline: none;
-  transition: 0.3s;
   font-size: 14px;
+  transition: 0.3s;
 }
 
+.contact-box input:focus,
+.contact-box textarea:focus,
 .feedback-box input:focus,
 .feedback-box textarea:focus,
 .feedback-box select:focus {
@@ -279,6 +200,7 @@ button:hover {
   box-shadow: 0 0 6px rgba(83,106,221,0.4);
 }
 
+.contact-box button,
 .feedback-box button {
   width: 100%;
   margin-top: 15px;
@@ -292,30 +214,32 @@ button:hover {
   transition: 0.3s;
 }
 
+.contact-box button:hover,
 .feedback-box button:hover {
   background: #0e2dda;
 }
 
 .home-hero {
   max-width: 900px;
-  margin: 80px auto 50px auto;
+  margin: 80px auto 50px;
   text-align: center;
 }
 
 .home-hero .profile {
-  width: 180px;                
-  height: 180px;              
-  border-radius: 50%;         
-  border: 4px solid #1335de;  
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5); 
-  object-fit: cover;        
-  transition:  0.3s;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #1335de;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  object-fit: cover;
+  transition: 0.3s;
 }
 
 .home-hero .profile:hover {
   transform: scale(1.18);
   box-shadow: 0 12px 30px rgba(83,106,221,0.7);
 }
+
 .home-hero h1 {
   font-size: 36px;
   margin: 20px 0 10px;
@@ -323,9 +247,7 @@ button:hover {
   font-weight: bold;
 }
 
-.home-hero h1 span {
-  color: #3881d5;
-}
+.home-hero h1 span { color: #3881d5; }
 
 .home-hero h3 {
   font-size: 20px;
@@ -340,7 +262,6 @@ button:hover {
   margin-bottom: 30px;
 }
 
-/* Buttons */
 .home-hero .links {
   display: flex;
   justify-content: center;
@@ -354,7 +275,7 @@ button:hover {
   background: #536add;
   color: white;
   font-weight: 500;
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 .home-hero .btn:hover {
